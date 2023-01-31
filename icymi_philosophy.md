@@ -7,11 +7,11 @@ This is a description of the [Mastodon](https://joinmastodon.org) bot @icymi_phi
 Here is a list of the principal steps the bot runs through every hour:
 
 1. It reads in a list of all accounts it is following. 
-2. It bot reads in the list of philosophers on Mastodon maintained by [Cédric Eyssette](https://eyssette.github.io/Mastodon-Philosophy/).
-3. It bot combines the lists (I refer to this combines list as the bot's FOLLOWEES).
-4. It bot reads in its home timeline of the last 24 hours (or max. 400 posts, which is currently the maximum timeline buffer)
-5. It bot removes all it's own posts and boosts from the timeline.
-6. It bot removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio.
+2. It reads in the list of philosophers on Mastodon maintained by [Cédric Eyssette](https://eyssette.github.io/Mastodon-Philosophy/).
+3. It combines the lists (I refer to this combines list as the bot's FOLLOWEES).
+4. It reads in its home timeline of the last 24 hours (or max. 400 posts, which is currently the maximum timeline buffer)
+5. It removes all it's own posts and boosts from the timeline.
+6. It removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio.
 7. It separates all posts into two lists: (a) Posts and (b) Boosts. Posts that it received by following the Hashtag #philosophy go with the boosts.
 8. It follows every post in the Post-set (a) back to the originating server and counts reblogs, favourites, and replies.
 9. It follows every post in the Reblog-set (a) back to the originating server and counts reblogs, favourites, and replies.
