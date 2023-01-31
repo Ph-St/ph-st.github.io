@@ -2,7 +2,7 @@
 
 ## Documentation
 
-This is a description of the [Mastodon](https://joinmastodon.org) bot @icymi_philosophy@botsin.space. The bot aims to aid discovery within the philosophy community on mastodon. It is currently in an early stage of development. I took over many ideas from [@icymi_law@esq.social](https://icymilaw.org/).
+This is a description of the [Mastodon](https://joinmastodon.org) bot @icymi_philosophy@botsin.space. The bot aims to aid discovery within the philosophy community on mastodon. It is currently in an early stage of development and written in Python using the [mastodon.py](https://github.com/halcy/Mastodon.py) wrapper. I took over many ideas from [@icymi_law@esq.social](https://icymilaw.org/).
 
 Here is a list of the principal steps the bot runs through every hour:
 
