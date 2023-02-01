@@ -33,4 +33,5 @@ Here is a list of the principal steps the bot runs through every hour:
 3. Distinguish long threads from posts with many replies.
 4. Automatically add everyone on the fediphilosophy instance to the FOLLOWEEs. Currently not possible due to API version of that instance.
 5. Check posts for the most common links and post a list of those links once per day.
-6. 
+6. Publish most common hashtags
+7. Publish a digest containing all accounts boosted
