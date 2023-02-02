@@ -1,5 +1,6 @@
 # ICYMI (Philosophy) Daily Digest report
-## Boosts between 2023-02-01 16:01:07 and 2023-02-02 15:04:55<iframe src="https://zirk.us/@annedraya/109789927237298889/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+## Boosts between 2023-02-01 16:01:07 and 2023-02-02 15:04:55
+<iframe src="https://zirk.us/@annedraya/109789927237298889/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 <iframe src="https://mstdn.social/@bodhidave/109789768258782992/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 <iframe src="https://scholar.social/@twsh/109789692431297766/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 <iframe src="https://historians.social/@historleans/109785145956098010/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
