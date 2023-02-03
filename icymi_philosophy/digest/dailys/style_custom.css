@@ -2,6 +2,22 @@ body {
     font-family: sans-serif;
 }
 
+.column {
+  float: left;
+  margin-right: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h4 {
+    margin-top: 40px;
+}
+
 .post {
     margin-top: 20px;
     display: block;
@@ -14,7 +30,6 @@ body {
 }
 
 .info {
-    background-color: rgb(222, 255, 191);
     overflow: auto;
     padding-top: -2px;
 }
@@ -31,24 +46,51 @@ body {
 .display_name {
     display: block;
     margin-bottom: 2px;
-
 }
 
 .account_name {
     display: block;
     margin-top: 2px;
-
-
 }
 
 .content {
     padding: 5px;
-    
+}
+
+.original_totals .info {
+    background-color: #aad1df;
+}
+
+.original_favs .info {
+    background-color: #f0c7b8;
+}
+
+.original_replies .info {
+    background-color: #e4a3fd;
+}
+
+.all_totals .info {
+    background-color: #fdea92;
+}
+
+.all_reblog_phil .info {
+    background-color: #b0b1ec;
+}
+
+.all_favs_phil .info {
+    background-color: #cda5d0;
 }
 
 .created_at {
-   font-size: small; 
-   padding-left: 5px;
+    font-size: small; 
+    float: left;
+    display: inline;
+    padding-left: 5px;
 }
 
-
+.original_url {
+    font-size: small; 
+    float: right;
+    display: inline;
+    padding-right: 5px;
+}
