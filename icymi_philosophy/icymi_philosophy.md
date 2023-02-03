@@ -4,7 +4,7 @@
 
 This is a description of the [Mastodon](https://joinmastodon.org) bot @icymi_philosophy@botsin.space. The bot aims to aid discovery within the philosophy community on mastodon. It is currently in an early stage of development and written in Python using the [mastodon.py](https://github.com/halcy/Mastodon.py) wrapper. I took over many ideas from [@icymi_law@esq.social](https://icymilaw.org/).
 
-Here is a list of the principal steps the bot runs through every hour:
+Here is a list of the principal steps the bot runs through every two hours:
 
 1. It reads in a list of all accounts it is following. 
 2. It reads in the list of philosophers on Mastodon maintained by [Cédric Eyssette](https://eyssette.github.io/Mastodon-Philosophy/).
@@ -16,14 +16,14 @@ Here is a list of the principal steps the bot runs through every hour:
 8. It follows every post in the Post-set (a) back to the originating server and counts reblogs, favourites, and replies.
 9. It follows every post in the Reblog-set (a) back to the originating server and counts reblogs, favourites, and replies.
 10. If the reblog or favourite comes from a FOLLOWEE account, it's being counted twice.
-11. It stores 7 posts in a database:
-    - (1) The two post in the Post-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
+11. It stores 12 posts in a database:
+    - (1) Four posts in the Post-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
     - (2) The post in the Post-set with most replies. The bot also blacklists the entire context of this post so that the same thread isn't boosted multiple times.
     - (3) The post in the Post-set with most favourites. 
-    - (4) The post in the Boost-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
-    - (5) The post in the Boost-set with most reblogs by FOLLOWEES.
-    - (6) The post in the Boost-set with most favourites by FOLLOWEES.
-12. Every 8 minutes, the bot boosts one of those 7 selected posts and removes it from the database.
+    - (4) Two posts in the Boost-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
+    - (5) Two posts in the Boost-set with most reblogs by FOLLOWEES.
+    - (6) Two posts in the Boost-set with most favourites by FOLLOWEES.
+12. Every 17 minutes, the bot boosts one of those 12 selected posts and removes it from the database.
 
 
 ## TODO
