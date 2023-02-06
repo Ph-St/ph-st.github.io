@@ -7,23 +7,23 @@ This is a description of the [Mastodon](https://joinmastodon.org) bot @icymi_phi
 Here is a list of the principal steps the bot runs through every two hours:
 
 1. It reads in a list of all accounts it is following. 
-2. It reads in the list of philosophers on Mastodon maintained by [Cédric Eyssette](https://eyssette.github.io/Mastodon-Philosophy/).
-3. It combines the lists (I refer to this combines list as the bot's FOLLOWEES).
-4. It reads in its home timeline of the last 24 hours (or max. 400 posts, which is currently the maximum timeline buffer)
-5. It removes all it's own posts and boosts from the timeline.
-6. It removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio.
-7. It separates all posts into two lists: (a) Posts and (b) Boosts. Posts that it received by following the Hashtag #philosophy go with the boosts.
-8. It follows every post in the Post-set (a) back to the originating server and counts reblogs, favourites, and replies.
-9. It follows every post in the Reblog-set (a) back to the originating server and counts reblogs, favourites, and replies.
-10. If the reblog or favourite comes from a FOLLOWEE account, it's being counted twice.
-11. It stores 12 posts in a database:
+2. It combines the lists (I refer to this combines list as the bot's FOLLOWEES).
+3. It reads in its home timeline of the last 24 hours (or max. 400 posts, which is currently the maximum timeline buffer)
+4. It removes all it's own posts and boosts from the timeline.
+5. It removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio.
+6. It separates all posts into two lists: (a) Posts and (b) Boosts. Posts that it received by following the Hashtag #philosophy go with the boosts.
+7. It follows every post in the Post-set (a) back to the originating server and counts reblogs, favourites, and replies.
+8. It follows every post in the Reblog-set (a) back to the originating server and counts reblogs, favourites, and replies.
+9. If the reblog or favourite comes from a FOLLOWEE account, it's being counted twice.
+10. It stores 12 posts in a database:
     - (1) Four posts in the Post-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
     - (2) The post in the Post-set with most replies. The bot also blacklists the entire context of this post so that the same thread isn't boosted multiple times.
     - (3) The post in the Post-set with most favourites. 
     - (4) Two posts in the Boost-set with most reblogs plus favourites, if two posts have the same counts, the post with more reblogs is selected. 
     - (5) Two posts in the Boost-set with most reblogs by FOLLOWEES.
     - (6) Two posts in the Boost-set with most favourites by FOLLOWEES.
-12. Every 17 minutes, the bot boosts one of those 12 selected posts and removes it from the database.
+11. Every 17 minutes, the bot boosts one of those 12 selected posts and removes it from the database.
+12. On Sunday, 1 PM CET the bot reads the list of philosophers on Mastodon maintained by [Cédric Eyssette](https://eyssette.github.io/Mastodon-Philosophy/) as well as the one maintained by [Kelly Truelove](https://truesciphi.org/phi_mas.html) and follows everyone from these lists it is not already following.
 
 
 ## TODO
