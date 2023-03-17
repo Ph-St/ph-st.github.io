@@ -10,7 +10,7 @@ Here is a list of the principal steps the bot runs through every two hours:
 2. It combines the lists (I refer to this combines list as the bot's FOLLOWEES).
 3. It reads in its home timeline of the last 6 hours (or max. 400 posts, which is currently the maximum timeline buffer)
 4. It removes all it's own posts and boosts from the timeline.
-5. It removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio.
+5. It removes all posts and boosts by accounts that have either "nobot" or "noindex" in their bio. It also removes all posts that have "nobot" or "noindex in their content.
 6. It separates all posts into two lists: (a) Posts and (b) Boosts. Posts that it received by following the Hashtag #philosophy go with the boosts.
 7. It follows every post in the Post-set (a) back to the originating server and counts reblogs, favourites, and replies.
 8. It follows every post in the Reblog-set (a) back to the originating server and counts reblogs, favourites, and replies.
